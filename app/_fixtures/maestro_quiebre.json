@@ -1,0 +1,416 @@
+[
+{
+  "model": "maestro.quiebre",
+  "pk": 1,
+  "fields": {
+    "institucion": 1,
+    "medicamento": 5,
+    "cantidad": 500
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 2,
+  "fields": {
+    "institucion": 21,
+    "medicamento": 7,
+    "cantidad": 7000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 3,
+  "fields": {
+    "institucion": 15,
+    "medicamento": 18,
+    "cantidad": 4000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 4,
+  "fields": {
+    "institucion": 12,
+    "medicamento": 6,
+    "cantidad": 2000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 5,
+  "fields": {
+    "institucion": 8,
+    "medicamento": 22,
+    "cantidad": 1000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 6,
+  "fields": {
+    "institucion": 27,
+    "medicamento": 16,
+    "cantidad": 4000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 7,
+  "fields": {
+    "institucion": 30,
+    "medicamento": 24,
+    "cantidad": 500
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 8,
+  "fields": {
+    "institucion": 5,
+    "medicamento": 29,
+    "cantidad": 1000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 9,
+  "fields": {
+    "institucion": 23,
+    "medicamento": 13,
+    "cantidad": 9000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 10,
+  "fields": {
+    "institucion": 14,
+    "medicamento": 20,
+    "cantidad": 5000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 11,
+  "fields": {
+    "institucion": 30,
+    "medicamento": 17,
+    "cantidad": 6000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 12,
+  "fields": {
+    "institucion": 4,
+    "medicamento": 27,
+    "cantidad": 3000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 13,
+  "fields": {
+    "institucion": 9,
+    "medicamento": 2,
+    "cantidad": 10000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 14,
+  "fields": {
+    "institucion": 18,
+    "medicamento": 4,
+    "cantidad": 2000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 15,
+  "fields": {
+    "institucion": 28,
+    "medicamento": 21,
+    "cantidad": 8000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 16,
+  "fields": {
+    "institucion": 19,
+    "medicamento": 9,
+    "cantidad": 5000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 17,
+  "fields": {
+    "institucion": 3,
+    "medicamento": 10,
+    "cantidad": 3000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 18,
+  "fields": {
+    "institucion": 25,
+    "medicamento": 14,
+    "cantidad": 7000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 19,
+  "fields": {
+    "institucion": 2,
+    "medicamento": 8,
+    "cantidad": 6000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 20,
+  "fields": {
+    "institucion": 16,
+    "medicamento": 28,
+    "cantidad": 2000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 21,
+  "fields": {
+    "institucion": 13,
+    "medicamento": 33,
+    "cantidad": 9000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 22,
+  "fields": {
+    "institucion": 10,
+    "medicamento": 15,
+    "cantidad": 5000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 23,
+  "fields": {
+    "institucion": 31,
+    "medicamento": 11,
+    "cantidad": 4000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 24,
+  "fields": {
+    "institucion": 7,
+    "medicamento": 34,
+    "cantidad": 3000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 25,
+  "fields": {
+    "institucion": 26,
+    "medicamento": 3,
+    "cantidad": 10000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 26,
+  "fields": {
+    "institucion": 17,
+    "medicamento": 26,
+    "cantidad": 6000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 27,
+  "fields": {
+    "institucion": 32,
+    "medicamento": 12,
+    "cantidad": 8000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 28,
+  "fields": {
+    "institucion": 24,
+    "medicamento": 31,
+    "cantidad": 10000
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 29,
+  "fields": {
+    "institucion": 21,
+    "medicamento": 3,
+    "cantidad": 6700
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 30,
+  "fields": {
+    "institucion": 10,
+    "medicamento": 8,
+    "cantidad": 7900
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 31,
+  "fields": {
+    "institucion": 13,
+    "medicamento": 26,
+    "cantidad": 5300
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 32,
+  "fields": {
+    "institucion": 17,
+    "medicamento": 11,
+    "cantidad": 8700
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 33,
+  "fields": {
+    "institucion": 19,
+    "medicamento": 7,
+    "cantidad": 7800
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 34,
+  "fields": {
+    "institucion": 23,
+    "medicamento": 22,
+    "cantidad": 6400
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 35,
+  "fields": {
+    "institucion": 5,
+    "medicamento": 20,
+    "cantidad": 8900
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 36,
+  "fields": {
+    "institucion": 29,
+    "medicamento": 15,
+    "cantidad": 4500
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 37,
+  "fields": {
+    "institucion": 6,
+    "medicamento": 2,
+    "cantidad": 7100
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 38,
+  "fields": {
+    "institucion": 4,
+    "medicamento": 18,
+    "cantidad": 6200
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 39,
+  "fields": {
+    "institucion": 11,
+    "medicamento": 13,
+    "cantidad": 9600
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 40,
+  "fields": {
+    "institucion": 15,
+    "medicamento": 30,
+    "cantidad": 5900
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 41,
+  "fields": {
+    "institucion": 20,
+    "medicamento": 27,
+    "cantidad": 7100
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 42,
+  "fields": {
+    "institucion": 26,
+    "medicamento": 1,
+    "cantidad": 8700
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 43,
+  "fields": {
+    "institucion": 30,
+    "medicamento": 4,
+    "cantidad": 5200
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 44,
+  "fields": {
+    "institucion": 31,
+    "medicamento": 25,
+    "cantidad": 7600
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 45,
+  "fields": {
+    "institucion": 32,
+    "medicamento": 14,
+    "cantidad": 3800
+  }
+},
+{
+  "model": "maestro.quiebre",
+  "pk": 46,
+  "fields": {
+    "institucion": 34,
+    "medicamento": 9,
+    "cantidad": 9400
+  }
+}
+]

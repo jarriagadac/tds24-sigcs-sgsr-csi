@@ -1,0 +1,422 @@
+[
+{
+  "model": "maestro.institucion",
+  "pk": 1,
+  "fields": {
+    "nombre": "Clínica RedSalud Elqui",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 12,
+    "num_camas_uci": 6,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 2,
+  "fields": {
+    "nombre": "Complejo Asistencial Barros Luco",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 24,
+    "num_camas_uci": 21,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 3,
+  "fields": {
+    "nombre": "Clínica Dávila",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 56,
+    "num_camas_uci": 24,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 4,
+  "fields": {
+    "nombre": "Hospital Regional de Antofagasta",
+    "tipo": "hospital_clinico",
+    "titularidad": "publico",
+    "num_camas_uti": 30,
+    "num_camas_uci": 15,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 5,
+  "fields": {
+    "nombre": "Centro Médico Santa María",
+    "tipo": "centro_medico",
+    "titularidad": "privado",
+    "num_camas_uti": 10,
+    "num_camas_uci": 5,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 6,
+  "fields": {
+    "nombre": "Centro de Salud Familiar La Cisterna",
+    "tipo": "cesfam",
+    "titularidad": "publico",
+    "num_camas_uti": 8,
+    "num_camas_uci": 4,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 7,
+  "fields": {
+    "nombre": "Clínica San Joaquín",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 20,
+    "num_camas_uci": 10,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 8,
+  "fields": {
+    "nombre": "Hospital Dr. Gustavo Fricke",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 40,
+    "num_camas_uci": 20,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 9,
+  "fields": {
+    "nombre": "Centro de Salud Talagante",
+    "tipo": "ces",
+    "titularidad": "publico",
+    "num_camas_uti": 12,
+    "num_camas_uci": 6,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 10,
+  "fields": {
+    "nombre": "Centro Médico Los Álamos",
+    "tipo": "centro_medico",
+    "titularidad": "privado",
+    "num_camas_uti": 8,
+    "num_camas_uci": 4,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 11,
+  "fields": {
+    "nombre": "Hospital San Juan de Dios",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 35,
+    "num_camas_uci": 18,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 12,
+  "fields": {
+    "nombre": "Clínica Alemana",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 25,
+    "num_camas_uci": 12,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 13,
+  "fields": {
+    "nombre": "Hospital Regional de Valparaíso",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 45,
+    "num_camas_uci": 22,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 14,
+  "fields": {
+    "nombre": "Centro de Salud Familiar Ñuñoa",
+    "tipo": "cesfam",
+    "titularidad": "publico",
+    "num_camas_uti": 6,
+    "num_camas_uci": 3,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 15,
+  "fields": {
+    "nombre": "Clínica Santa María",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 15,
+    "num_camas_uci": 8,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 16,
+  "fields": {
+    "nombre": "Hospital Las Higueras",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 20,
+    "num_camas_uci": 10,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 17,
+  "fields": {
+    "nombre": "Centro de Salud Lo Barnechea",
+    "tipo": "ces",
+    "titularidad": "publico",
+    "num_camas_uti": 10,
+    "num_camas_uci": 5,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 18,
+  "fields": {
+    "nombre": "Centro Médico Vitacura",
+    "tipo": "centro_medico",
+    "titularidad": "privado",
+    "num_camas_uti": 12,
+    "num_camas_uci": 6,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 19,
+  "fields": {
+    "nombre": "Hospital San Borja Arriarán",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 30,
+    "num_camas_uci": 15,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 20,
+  "fields": {
+    "nombre": "Clínica Las Condes",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 35,
+    "num_camas_uci": 18,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 21,
+  "fields": {
+    "nombre": "Hospital Clínico Universidad de Chile",
+    "tipo": "hospital_clinico",
+    "titularidad": "publico",
+    "num_camas_uti": 50,
+    "num_camas_uci": 25,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 22,
+  "fields": {
+    "nombre": "Centro de Salud Familiar Puente Alto",
+    "tipo": "cesfam",
+    "titularidad": "publico",
+    "num_camas_uti": 8,
+    "num_camas_uci": 4,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 23,
+  "fields": {
+    "nombre": "Clínica Indisa",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 30,
+    "num_camas_uci": 15,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 24,
+  "fields": {
+    "nombre": "Hospital San José",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 40,
+    "num_camas_uci": 20,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 25,
+  "fields": {
+    "nombre": "Centro de Salud San Miguel",
+    "tipo": "ces",
+    "titularidad": "publico",
+    "num_camas_uti": 12,
+    "num_camas_uci": 6,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 26,
+  "fields": {
+    "nombre": "Centro Médico Providencia",
+    "tipo": "centro_medico",
+    "titularidad": "privado",
+    "num_camas_uti": 15,
+    "num_camas_uci": 8,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 27,
+  "fields": {
+    "nombre": "Hospital Félix Bulnes",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 35,
+    "num_camas_uci": 18,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 28,
+  "fields": {
+    "nombre": "Clínica Santa María de la Dehesa",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 20,
+    "num_camas_uci": 10,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 29,
+  "fields": {
+    "nombre": "Hospital Regional de Concepción",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 45,
+    "num_camas_uci": 22,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 30,
+  "fields": {
+    "nombre": "Centro de Salud Familiar La Florida",
+    "tipo": "cesfam",
+    "titularidad": "publico",
+    "num_camas_uti": 8,
+    "num_camas_uci": 4,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 31,
+  "fields": {
+    "nombre": "Clínica Las Lilas",
+    "tipo": "clinica",
+    "titularidad": "privado",
+    "num_camas_uti": 15,
+    "num_camas_uci": 8,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 32,
+  "fields": {
+    "nombre": "Hospital Gustavo Fricke de Valparaíso",
+    "tipo": "hospital",
+    "titularidad": "publico",
+    "num_camas_uti": 30,
+    "num_camas_uci": 15,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 33,
+  "fields": {
+    "nombre": "Centro de Salud San Bernardo",
+    "tipo": "ces",
+    "titularidad": "publico",
+    "num_camas_uti": 10,
+    "num_camas_uci": 5,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 34,
+  "fields": {
+    "nombre": "Centro Médico Ñuñoa",
+    "tipo": "centro_medico",
+    "titularidad": "privado",
+    "num_camas_uti": 12,
+    "num_camas_uci": 6,
+    "factor": 1.0
+  }
+},
+{
+  "model": "maestro.institucion",
+  "pk": 35,
+  "fields": {
+    "nombre": "CENABAST",
+    "tipo": "farmacia",
+    "titularidad": "publico",
+    "num_camas_uti": 0,
+    "num_camas_uci": 0,
+    "factor": 0.0
+  }
+}
+]

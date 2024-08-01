@@ -1,0 +1,182 @@
+[
+{
+  "model": "maestro.equipamiento",
+  "pk": 3,
+  "fields": {
+    "item": 1,
+    "marca": "Philips",
+    "modelo": "Respironics V60"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 4,
+  "fields": {
+    "item": 1,
+    "marca": "Medtronic",
+    "modelo": "Puritan Bennet 840"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 5,
+  "fields": {
+    "item": 2,
+    "marca": "GE Healthcare",
+    "modelo": "Dash 5000"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 6,
+  "fields": {
+    "item": 2,
+    "marca": "Philips",
+    "modelo": "IntelliVue MX700"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 7,
+  "fields": {
+    "item": 3,
+    "marca": "ZOLL",
+    "modelo": "AED Plus"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 8,
+  "fields": {
+    "item": 3,
+    "marca": "Physio-Control",
+    "modelo": "LIFEPAK15"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 9,
+  "fields": {
+    "item": 5,
+    "marca": "Moog",
+    "modelo": "Infinity Enteral Feeding Pump"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 10,
+  "fields": {
+    "item": 5,
+    "marca": "Fresenius Kabi",
+    "modelo": "Kangoroo ePump"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 11,
+  "fields": {
+    "item": 6,
+    "marca": "Hill-Rom",
+    "modelo": "TotalCare P500"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 12,
+  "fields": {
+    "item": 6,
+    "marca": "Stryker",
+    "modelo": "Secure II"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 13,
+  "fields": {
+    "item": 7,
+    "marca": "GE Healthcare",
+    "modelo": "MAC 5500 HD"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 14,
+  "fields": {
+    "item": 7,
+    "marca": "Philips",
+    "modelo": "IntelliVue MX800"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 15,
+  "fields": {
+    "item": 8,
+    "marca": "Edwards Lifesciences",
+    "modelo": "Vigileo"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 16,
+  "fields": {
+    "item": 8,
+    "marca": "ICU Medical",
+    "modelo": "Clave Swan-Ganz"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 17,
+  "fields": {
+    "item": 9,
+    "marca": "DeVilbiss Healthcare",
+    "modelo": "VacuAide QSU"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 18,
+  "fields": {
+    "item": 9,
+    "marca": "Precision Medical",
+    "modelo": "PM60 EasyVac"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 19,
+  "fields": {
+    "item": 10,
+    "marca": "Becton Dickinson (BD)",
+    "modelo": "Alaris™ Pump Module"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 20,
+  "fields": {
+    "item": 10,
+    "marca": "Smiths Medical",
+    "modelo": "Medfusion® 4000 Syringe Pump"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 21,
+  "fields": {
+    "item": 11,
+    "marca": "Natus Medical",
+    "modelo": "NicoletOne EEG"
+  }
+},
+{
+  "model": "maestro.equipamiento",
+  "pk": 22,
+  "fields": {
+    "item": 11,
+    "marca": "Integra LifeSciences",
+    "modelo": "Camino Intracranial Pressure (ICP) Monitoring System"
+  }
+}
+]

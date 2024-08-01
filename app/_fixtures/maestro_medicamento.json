@@ -1,0 +1,702 @@
+[
+{
+  "model": "maestro.medicamento",
+  "pk": 1,
+  "fields": {
+    "nombre_comercial": "Ibupirac",
+    "nombre_generico": "Ibuprofeno",
+    "ingredientes": "Ibuprofeno",
+    "concentracion": "400mg",
+    "forma_presentacion": "blister",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal de dolores leves a moderados, como dolores de cabeza, dolores musculares, dolor de espalda, dolor de muelas, dolor menstrual y dolor de artritis.",
+    "contraindicaciones": "No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o hemorragia gastrointestinal, insuficiencia cardíaca grave o enfermedad hepática grave.",
+    "efectos_secundarios": "Algunos efectos secundarios pueden incluir malestar estomacal, náuseas, vómitos, diarrea, mareos, dolor de cabeza y erupciones en la piel. En casos raros, puede causar reacciones alérgicas graves.",
+    "instrucciones_dosificacion": "La dosis recomendada para adultos es de 400mg cada 4 a 6 horas, no excediendo los 1,200mg en 24 horas. Consulte a su médico para obtener instrucciones específicas.",
+    "fabricante": "Laboratorios Chile S.A.",
+    "informacion_almacenamiento": "Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
+    "interacciones_medicamentosas": "El ibuprofeno puede interactuar con otros medicamentos, como anticoagulantes, antihipertensivos, aspirina, corticosteroides y diuréticos. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 2,
+  "fields": {
+    "nombre_comercial": "Ventolin",
+    "nombre_generico": "Salbutamol",
+    "ingredientes": "Salbutamol",
+    "concentracion": "100mcg/dosis",
+    "forma_presentacion": "inhalador",
+    "forma_farmaceutica": "aerosol",
+    "via_administracion": "intravenoso",
+    "indicaciones_terapeuticas": "Tratamiento de enfermedades respiratorias, como el asma bronquial, broncoespasmo reversible asociado con enfermedad pulmonar obstructiva crónica y otras condiciones que causen constricción de las vías respiratorias.",
+    "contraindicaciones": "No utilizar en caso de alergia al salbutamol o si ha experimentado reacciones alérgicas graves a otros broncodilatadores.",
+    "efectos_secundarios": "Puede causar temblores, nerviosismo, taquicardia, mareos, cefalea, calambres musculares y alteraciones del sueño. En casos raros, puede causar reacciones alérgicas graves.",
+    "instrucciones_dosificacion": "La dosis recomendada varía según la edad y la gravedad de la condición. Consulte a su médico para obtener instrucciones específicas sobre la dosificación y la frecuencia de uso.",
+    "fabricante": "Laboratorio GlaxoSmithKline Chile S.A.",
+    "informacion_almacenamiento": "Almacenar en un lugar fresco y seco, protegido de la luz solar directa y fuera del alcance de los niños.",
+    "interacciones_medicamentosas": "El salbutamol puede interactuar con otros medicamentos, como betabloqueantes, diuréticos y medicamentos para el tratamiento del asma. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 3,
+  "fields": {
+    "nombre_comercial": "Abrilar",
+    "nombre_generico": null,
+    "ingredientes": "Hedera Helix",
+    "concentracion": "35mg/5ml",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": null,
+    "contraindicaciones": null,
+    "efectos_secundarios": null,
+    "instrucciones_dosificacion": null,
+    "fabricante": "Engelhard Arzneimittel GmbH & Co KG",
+    "informacion_almacenamiento": null,
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 4,
+  "fields": {
+    "nombre_comercial": "Azitromicina",
+    "nombre_generico": "Azitromicina",
+    "ingredientes": "Azitromicina",
+    "concentracion": "500mg",
+    "forma_presentacion": "blister",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": null,
+    "contraindicaciones": null,
+    "efectos_secundarios": null,
+    "instrucciones_dosificacion": null,
+    "fabricante": "Laboratorio Chile",
+    "informacion_almacenamiento": null,
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 5,
+  "fields": {
+    "nombre_comercial": "Tiriz",
+    "nombre_generico": null,
+    "ingredientes": "Levocetirizina Diclorhidrato",
+    "concentracion": "5mg",
+    "forma_presentacion": "blister",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": null,
+    "contraindicaciones": null,
+    "efectos_secundarios": null,
+    "instrucciones_dosificacion": null,
+    "fabricante": "Eurofarma",
+    "informacion_almacenamiento": null,
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 6,
+  "fields": {
+    "nombre_comercial": "Nastul Compuesto",
+    "nombre_generico": null,
+    "ingredientes": "Paracetamol 125mg, Pseudoefedrina sulfato 30mg, Clorfenamina maleato 2mg",
+    "concentracion": "5ml",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "No administrar por más de 5 días en caso de dolor, por más de 3 días en caso de fiebre, o por más de dos días en caso de dolor de garganta, a menos que un médico lo señale.",
+    "contraindicaciones": "Este producto no debe administrarse a niños menores de 12 años sin consultar la dosis al médico.",
+    "efectos_secundarios": null,
+    "instrucciones_dosificacion": null,
+    "fabricante": "Instituto Sanitas S.A.",
+    "informacion_almacenamiento": "Almacenar en su envase original, protegido de la luz y la humedad, a no más de 25°C.",
+    "interacciones_medicamentosas": "Producto potencialmente hepatotóxico, que puede además causar reacciones graves a la piel."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 7,
+  "fields": {
+    "nombre_comercial": "Veklury",
+    "nombre_generico": "Remdesivir",
+    "ingredientes": "Remdesivir",
+    "concentracion": "100mg",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intravenoso",
+    "indicaciones_terapeuticas": "Tratamiento de COVID-19 en pacientes hospitalizados que requieren oxígeno suplementario.",
+    "contraindicaciones": "No utilizar en pacientes con reacciones alérgicas graves conocidas al remdesivir.",
+    "efectos_secundarios": "Puede causar náuseas, vómitos, diarrea, aumento de las enzimas hepáticas y erupciones en la piel.",
+    "instrucciones_dosificacion": "La dosis recomendada para adultos es de 200mg en el primer día, seguida de 100mg al día durante los siguientes 4-9 días. La duración del tratamiento puede variar según la gravedad de la enfermedad y la respuesta del paciente.",
+    "fabricante": "Gilead Sciences, Inc.",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, entre 20°C y 25°C. Proteger de la luz y congelar la solución no utilizada.",
+    "interacciones_medicamentosas": "El remdesivir puede interactuar con medicamentos que afectan la función hepática o la coagulación sanguínea. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 8,
+  "fields": {
+    "nombre_comercial": "Decadron",
+    "nombre_generico": "Dexametasona",
+    "ingredientes": "Dexametasona",
+    "concentracion": "4mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Tratamiento de COVID-19 en pacientes graves que requieren oxígeno suplementario o ventilación mecánica.",
+    "contraindicaciones": "No utilizar en pacientes con alergia a la dexametasona o a otros corticosteroides.",
+    "efectos_secundarios": "Puede causar aumento del apetito, retención de líquidos, aumento de peso, cambios en el estado de ánimo y supresión del sistema inmunológico.",
+    "instrucciones_dosificacion": "La dosis recomendada varía según la gravedad de la enfermedad y la respuesta del paciente. Consulte a su médico para obtener instrucciones específicas.",
+    "fabricante": "Laboratorios Andrómaco S.A.",
+    "informacion_almacenamiento": "Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
+    "interacciones_medicamentosas": "La dexametasona puede interactuar con otros medicamentos, como anticoagulantes, antidiabéticos y medicamentos para la hipertensión. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 9,
+  "fields": {
+    "nombre_comercial": "Actemra",
+    "nombre_generico": "Tocilizumab",
+    "ingredientes": "Tocilizumab",
+    "concentracion": "400mg/20ml",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intravenoso",
+    "indicaciones_terapeuticas": "Tratamiento de COVID-19 en pacientes hospitalizados con neumonía severa o con síndrome de liberación de citoquinas.",
+    "contraindicaciones": "No utilizar en pacientes con hipersensibilidad al tocilizumab o a otros componentes del producto.",
+    "efectos_secundarios": "Puede causar reacciones infusionales, infecciones, disminución de los glóbulos blancos y aumento del riesgo de infecciones oportunistas.",
+    "instrucciones_dosificacion": "La dosis recomendada varía según la gravedad de la enfermedad y la respuesta del paciente. Consulte a su médico para obtener instrucciones específicas.",
+    "fabricante": "Hoffmann-La Roche Ltd.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C. No congelar. Proteger de la luz.",
+    "interacciones_medicamentosas": "El tocilizumab puede interactuar con otros medicamentos que afectan el sistema inmunológico. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 10,
+  "fields": {
+    "nombre_comercial": "Olumiant",
+    "nombre_generico": "Baricitinib",
+    "ingredientes": "Baricitinib",
+    "concentracion": "2mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Tratamiento de COVID-19 en combinación con remdesivir en pacientes hospitalizados que requieren oxígeno suplementario.",
+    "contraindicaciones": "No utilizar en pacientes con alergia al baricitinib o a otros inhibidores de la quinasa Janus (JAK).",
+    "efectos_secundarios": "Puede causar infecciones respiratorias, trombosis venosa profunda, embolia pulmonar, úlceras gastrointestinales y reacciones alérgicas.",
+    "instrucciones_dosificacion": "La dosis recomendada es de 4mg una vez al día. Consulte a su médico para obtener instrucciones específicas.",
+    "fabricante": "Eli Lilly and Company",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, entre 20°C y 25°C. Proteger de la luz y la humedad.",
+    "interacciones_medicamentosas": "El baricitinib puede interactuar con otros medicamentos, como anticoagulantes y medicamentos que afectan el sistema inmunológico. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 11,
+  "fields": {
+    "nombre_comercial": "Plasma Convaleciente",
+    "nombre_generico": null,
+    "ingredientes": "Plasma sanguíneo de pacientes recuperados de COVID-19",
+    "concentracion": "200ml",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intravenoso",
+    "indicaciones_terapeuticas": "Tratamiento de COVID-19 en pacientes hospitalizados graves o con riesgo de complicaciones, con el objetivo de transferir anticuerpos neutralizantes del virus.",
+    "contraindicaciones": "No utilizar en pacientes con alergia al plasma sanguíneo o con enfermedades que afecten la coagulación sanguínea.",
+    "efectos_secundarios": "Puede causar reacciones transfusionales, infecciones transmitidas por la sangre y sobrecarga de líquidos.",
+    "instrucciones_dosificacion": "La dosis recomendada varía según la condición del paciente y la disponibilidad del plasma convaleciente. Consulte a su médico para obtener información específica.",
+    "fabricante": "Varía según los bancos de sangre y hospitales que lo procesen.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C. No congelar. Proteger de la luz.",
+    "interacciones_medicamentosas": "No se han reportado interacciones medicamentosas significativas con el plasma convaleciente. Sin embargo, consulte a su médico o farmacéutico para obtener más información."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 12,
+  "fields": {
+    "nombre_comercial": "Tylenol",
+    "nombre_generico": "Paracetamol",
+    "ingredientes": "Paracetamol",
+    "concentracion": "500mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor de cabeza leve a moderado.",
+    "contraindicaciones": "No utilizar en caso de alergia al paracetamol o en caso de enfermedad hepática grave.",
+    "efectos_secundarios": "Puede causar daño hepático si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1-2 tabletas cada 4-6 horas según sea necesario. No exceder 4,000mg en 24 horas.",
+    "fabricante": "Johnson & Johnson",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El paracetamol puede interactuar con medicamentos que afectan la función hepática. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 13,
+  "fields": {
+    "nombre_comercial": "Advil",
+    "nombre_generico": "Ibuprofeno",
+    "ingredientes": "Ibuprofeno",
+    "concentracion": "200mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor de cabeza leve a moderado.",
+    "contraindicaciones": "No utilizar en caso de alergia al ibuprofeno, asma o úlcera péptica activa.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y daño renal si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 4-6 horas según sea necesario. No exceder 1,200mg en 24 horas.",
+    "fabricante": "Pfizer Inc.",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El ibuprofeno puede interactuar con medicamentos que afectan la coagulación sanguínea y la función renal. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 14,
+  "fields": {
+    "nombre_comercial": "Excedrin",
+    "nombre_generico": "Ácido acetilsalicílico, cafeína, paracetamol",
+    "ingredientes": "Ácido acetilsalicílico, cafeína, paracetamol",
+    "concentracion": "250mg, 65mg, 250mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor de cabeza leve a moderado.",
+    "contraindicaciones": "No utilizar en caso de alergia a los salicilatos, úlcera péptica activa o trastornos de la coagulación.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y reacciones alérgicas.",
+    "instrucciones_dosificacion": "Tomar 2 tabletas con un vaso de agua según sea necesario. No exceder 8 tabletas en 24 horas.",
+    "fabricante": "GlaxoSmithKline",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El ácido acetilsalicílico puede interactuar con medicamentos anticoagulantes y antiinflamatorios. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 15,
+  "fields": {
+    "nombre_comercial": "Migralex",
+    "nombre_generico": "Acetaminofeno, aspirina, cafeína",
+    "ingredientes": "Acetaminofeno, aspirina, cafeína",
+    "concentracion": "250mg, 250mg, 65mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor de cabeza leve a moderado.",
+    "contraindicaciones": "No utilizar en caso de alergia al acetaminofeno, aspirina o cafeína, úlcera péptica activa o trastornos de la coagulación.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y reacciones alérgicas.",
+    "instrucciones_dosificacion": "Tomar 2 tabletas con un vaso de agua según sea necesario. No exceder 8 tabletas en 24 horas.",
+    "fabricante": "Migralex LLC",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El acetaminofeno, aspirina y cafeína pueden interactuar con medicamentos anticoagulantes y antiinflamatorios. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 16,
+  "fields": {
+    "nombre_comercial": "Naproxeno",
+    "nombre_generico": "Naproxeno",
+    "ingredientes": "Naproxeno",
+    "concentracion": "220mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor de cabeza leve a moderado.",
+    "contraindicaciones": "No utilizar en caso de alergia al naproxeno o en caso de úlcera péptica activa.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y daño renal si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 8-12 horas según sea necesario. No exceder 660mg en 24 horas.",
+    "fabricante": "Bayer AG",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El naproxeno puede interactuar con medicamentos que afectan la coagulación sanguínea y la función renal. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 17,
+  "fields": {
+    "nombre_comercial": "Tylenol",
+    "nombre_generico": "Paracetamol",
+    "ingredientes": "Paracetamol",
+    "concentracion": "500mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal de la fiebre y el dolor.",
+    "contraindicaciones": "No utilizar en caso de alergia al paracetamol o en caso de enfermedad hepática grave.",
+    "efectos_secundarios": "Puede causar daño hepático si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1-2 tabletas cada 4-6 horas según sea necesario. No exceder 4,000mg en 24 horas.",
+    "fabricante": "Johnson & Johnson",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El paracetamol puede interactuar con medicamentos que afectan la función hepática. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 18,
+  "fields": {
+    "nombre_comercial": "Aspirina",
+    "nombre_generico": "Ácido acetilsalicílico",
+    "ingredientes": "Ácido acetilsalicílico",
+    "concentracion": "500mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal de la fiebre, el dolor y la inflamación.",
+    "contraindicaciones": "No utilizar en caso de alergia al ácido acetilsalicílico o en caso de úlcera péptica activa.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y reacciones alérgicas.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 4-6 horas según sea necesario. No exceder 4,000mg en 24 horas.",
+    "fabricante": "Bayer AG",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El ácido acetilsalicílico puede interactuar con medicamentos anticoagulantes y antiinflamatorios. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 19,
+  "fields": {
+    "nombre_comercial": "Ibuprofeno",
+    "nombre_generico": "Ibuprofeno",
+    "ingredientes": "Ibuprofeno",
+    "concentracion": "400mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal de la fiebre, el dolor y la inflamación.",
+    "contraindicaciones": "No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o trastornos de la coagulación.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y daño renal si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 4-6 horas según sea necesario. No exceder 1,200mg en 24 horas.",
+    "fabricante": "Pfizer Inc.",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El ibuprofeno puede interactuar con medicamentos anticoagulantes y antiinflamatorios. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 20,
+  "fields": {
+    "nombre_comercial": "Metoprolol",
+    "nombre_generico": "Metoprolol",
+    "ingredientes": "Metoprolol",
+    "concentracion": "100mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Tratamiento de la hipertensión arterial y la insuficiencia cardíaca.",
+    "contraindicaciones": "No utilizar en caso de alergia al metoprolol, insuficiencia cardíaca grave o trastornos del ritmo cardíaco.",
+    "efectos_secundarios": "Puede causar disminución de la presión arterial, fatiga, mareos y problemas de sueño.",
+    "instrucciones_dosificacion": "Tomar 1 tableta al día según las indicaciones de su médico.",
+    "fabricante": "AstraZeneca",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El metoprolol puede interactuar con otros medicamentos que afectan la presión arterial y el ritmo cardíaco. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 21,
+  "fields": {
+    "nombre_comercial": "Atenolol",
+    "nombre_generico": "Atenolol",
+    "ingredientes": "Atenolol",
+    "concentracion": "50mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Tratamiento de la hipertensión arterial y la angina de pecho.",
+    "contraindicaciones": "No utilizar en caso de alergia al atenolol, insuficiencia cardíaca grave o trastornos del ritmo cardíaco.",
+    "efectos_secundarios": "Puede causar disminución de la presión arterial, fatiga, mareos y problemas de sueño.",
+    "instrucciones_dosificacion": "Tomar 1 tableta al día según las indicaciones de su médico.",
+    "fabricante": "Novartis",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El atenolol puede interactuar con otros medicamentos que afectan la presión arterial y el ritmo cardíaco. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 22,
+  "fields": {
+    "nombre_comercial": "Omeprazol",
+    "nombre_generico": "Omeprazol",
+    "ingredientes": "Omeprazol",
+    "concentracion": "20mg",
+    "forma_presentacion": "cápsulas",
+    "forma_farmaceutica": "cápsulas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Tratamiento de la acidez estomacal, el reflujo gastroesofágico y las úlceras gástricas.",
+    "contraindicaciones": "No utilizar en caso de alergia al omeprazol o en caso de insuficiencia hepática grave.",
+    "efectos_secundarios": "Puede causar molestias estomacales, diarrea y aumento del riesgo de infecciones.",
+    "instrucciones_dosificacion": "Tomar 1 cápsula al día antes de una comida.",
+    "fabricante": "AstraZeneca",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El omeprazol puede interactuar con otros medicamentos que afectan la acidez estomacal y el metabolismo hepático. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 23,
+  "fields": {
+    "nombre_comercial": "Diclofenaco",
+    "nombre_generico": "Diclofenaco",
+    "ingredientes": "Diclofenaco",
+    "concentracion": "50mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor y la inflamación.",
+    "contraindicaciones": "No utilizar en caso de alergia al diclofenaco, úlcera péptica activa o enfermedad renal grave.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y daño renal si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 8-12 horas según sea necesario. No exceder 150mg en 24 horas.",
+    "fabricante": "Novartis",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El diclofenaco puede interactuar con medicamentos antiinflamatorios y anticoagulantes. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 24,
+  "fields": {
+    "nombre_comercial": "Naproxeno",
+    "nombre_generico": "Naproxeno",
+    "ingredientes": "Naproxeno",
+    "concentracion": "250mg",
+    "forma_presentacion": "tabletas",
+    "forma_farmaceutica": "tabletas",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Alivio temporal del dolor y la inflamación.",
+    "contraindicaciones": "No utilizar en caso de alergia al naproxeno, úlcera péptica activa o enfermedad renal grave.",
+    "efectos_secundarios": "Puede causar molestias estomacales, úlceras, sangrado gastrointestinal y daño renal si se excede la dosis recomendada.",
+    "instrucciones_dosificacion": "Tomar 1 tableta cada 8-12 horas según sea necesario. No exceder 1,250mg en 24 horas.",
+    "fabricante": "Bayer AG",
+    "informacion_almacenamiento": "Almacenar a temperatura ambiente, protegido de la luz y la humedad.",
+    "interacciones_medicamentosas": "El naproxeno puede interactuar con medicamentos antiinflamatorios y anticoagulantes. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 25,
+  "fields": {
+    "nombre_comercial": "Vacuna Influenza",
+    "nombre_generico": null,
+    "ingredientes": "Virus de la influenza inactivado",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la influenza estacional.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna o a huevos.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como síntomas similares a los de la influenza.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Laboratorio Vacunas SA",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 26,
+  "fields": {
+    "nombre_comercial": "Vacuna COVID-19",
+    "nombre_generico": null,
+    "ingredientes": "Antígeno del SARS-CoV-2",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la infección por COVID-19.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como síntomas similares a los de la gripe.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Pharmaceuticals Inc.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 27,
+  "fields": {
+    "nombre_comercial": "Vacuna Hepatitis A",
+    "nombre_generico": null,
+    "ingredientes": "Antígeno del virus de la hepatitis A",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la hepatitis A.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Vaccines Co.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 28,
+  "fields": {
+    "nombre_comercial": "Vacuna Meningococo",
+    "nombre_generico": null,
+    "ingredientes": "Antígenos del meningococo",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la infección por meningococo.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Vaccines Co.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 29,
+  "fields": {
+    "nombre_comercial": "Vacuna Tétanos",
+    "nombre_generico": null,
+    "ingredientes": "Toxoide tetánico",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención del tétanos.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Laboratorio Vacunas SA",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 30,
+  "fields": {
+    "nombre_comercial": "Vacuna Neumococo",
+    "nombre_generico": null,
+    "ingredientes": "Antígenos del neumococo",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la infección por neumococo.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Pharmaceuticals Inc.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 31,
+  "fields": {
+    "nombre_comercial": "Vacuna Varicela",
+    "nombre_generico": null,
+    "ingredientes": "Virus de la varicela atenuado",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la varicela.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna o a neomicina.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como erupción cutánea.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Laboratorio Vacunas SA",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 32,
+  "fields": {
+    "nombre_comercial": "Vacuna Hepatitis B",
+    "nombre_generico": null,
+    "ingredientes": "Antígeno de la hepatitis B",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "ampolla",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la hepatitis B.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Vaccines Co.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 33,
+  "fields": {
+    "nombre_comercial": "Vacuna Rotavirus",
+    "nombre_generico": null,
+    "ingredientes": "Virus del rotavirus atenuado",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "oral",
+    "indicaciones_terapeuticas": "Prevención de la infección por rotavirus.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna o con historial de invaginación intestinal.",
+    "efectos_secundarios": "Pueden presentarse vómitos, diarrea o fiebre leve.",
+    "instrucciones_dosificacion": "Se administra en dos dosis a los 2 y 4 meses de edad.",
+    "fabricante": "Pharmaceuticals Inc.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 34,
+  "fields": {
+    "nombre_comercial": "Vacuna Sarampión, Paperas, Rubéola (MMR)",
+    "nombre_generico": null,
+    "ingredientes": "Virus del sarampión, paperas y rubéola atenuados",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención del sarampión, las paperas y la rubéola.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna o con sistema inmunológico debilitado.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como fiebre o erupción cutánea.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Laboratorio Vacunas SA",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+},
+{
+  "model": "maestro.medicamento",
+  "pk": 35,
+  "fields": {
+    "nombre_comercial": "Vacuna Haemophilus influenzae tipo b (Hib)",
+    "nombre_generico": null,
+    "ingredientes": "Polisacárido del Haemophilus influenzae tipo b conjugado con proteína",
+    "concentracion": "0.5mL",
+    "forma_presentacion": "frasco",
+    "forma_farmaceutica": "solucion",
+    "via_administracion": "intramuscular",
+    "indicaciones_terapeuticas": "Prevención de la infección por Haemophilus influenzae tipo b.",
+    "contraindicaciones": "No administrar a personas con alergia a los componentes de la vacuna.",
+    "efectos_secundarios": "Pueden presentarse enrojecimiento, hinchazón o dolor en el lugar de la inyección, así como fiebre o malestar general.",
+    "instrucciones_dosificacion": null,
+    "fabricante": "Vaccines Co.",
+    "informacion_almacenamiento": "Almacenar en refrigeración entre 2°C y 8°C.",
+    "interacciones_medicamentosas": null
+  }
+}
+]

@@ -1,0 +1,12 @@
+__pycache__
+data
+venv
+
+.pytest_cache
+db.sqlite3
+
+app/inventario/migrations/000*.py
+app/stock/migrations/000*.py
+
+.idea
+.vscode

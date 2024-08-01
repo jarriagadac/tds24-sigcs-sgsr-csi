@@ -1,0 +1,90 @@
+[
+{
+  "model": "maestro.item",
+  "pk": 1,
+  "fields": {
+    "nombre": "Respirador Mecánico",
+    "tipo": "soporte_vital"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 2,
+  "fields": {
+    "nombre": "Monitor de Signos Vitales",
+    "tipo": "soporte_vital"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 3,
+  "fields": {
+    "nombre": "Bomba de Infusión",
+    "tipo": "soporte_vital"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 4,
+  "fields": {
+    "nombre": "Desfibrilador",
+    "tipo": "soporte_vital"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 5,
+  "fields": {
+    "nombre": "Bomba de Alimentación Enteral",
+    "tipo": "soporte_vital"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 6,
+  "fields": {
+    "nombre": "Cama de Cuidados Intensivos",
+    "tipo": "apoyo_monitorizacion"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 7,
+  "fields": {
+    "nombre": "Monitor ECG",
+    "tipo": "apoyo_monitorizacion"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 8,
+  "fields": {
+    "nombre": "Monitor de Presión Arterial Invasiva",
+    "tipo": "apoyo_monitorizacion"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 9,
+  "fields": {
+    "nombre": "Bomba de Succión",
+    "tipo": "apoyo_monitorizacion"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 10,
+  "fields": {
+    "nombre": "Sistema de Infusión de Fluidos",
+    "tipo": "apoyo_monitorizacion"
+  }
+},
+{
+  "model": "maestro.item",
+  "pk": 11,
+  "fields": {
+    "nombre": "Equipo de Monitorización Neurológica",
+    "tipo": "apoyo_monitorizacion"
+  }
+}
+]

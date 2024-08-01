@@ -1,0 +1,56 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$WfwlSwRR9Suq3eq1HLablS$YrsdXAP2P5QzEZ3f6SeoildmFAftnWzZFAw1fdGM9Gk=",
+    "last_login": "2023-07-09T19:42:58",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-05-13T21:12:11",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$jq9QOU6uZNekihhn6epWWZ$Vk0Pv07Yf4ipwRGiZwjJzr8/wPaWTCdTphUbAKgh448=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "jarriagada",
+    "first_name": "Juan",
+    "last_name": "Arriagada",
+    "email": "jarriagada@dcc.uchile.cl",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-07-09T19:43:28",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$bIYfUwIkVeE3FZ8mUzJwke$DDPyckhzcpKw57AU7HqbbqBukSSlucXncncsgCITBsw=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "dperovich",
+    "first_name": "Daniel",
+    "last_name": "Perovich",
+    "email": "dperovic@dcc.uchile.cl",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-07-09T19:43:49",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

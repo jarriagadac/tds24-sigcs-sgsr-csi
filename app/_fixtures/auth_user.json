@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$600000$WfwlSwRR9Suq3eq1HLablS$YrsdXAP2P5QzEZ3f6SeoildmFAftnWzZFAw1fdGM9Gk=",
-    "last_login": "2023-07-09T19:42:58",
+    "last_login": "2024-07-09T19:42:58",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -12,7 +12,7 @@
     "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2023-05-13T21:12:11",
+    "date_joined": "2024-05-13T21:12:11",
     "groups": [],
     "user_permissions": []
   }
@@ -30,7 +30,7 @@
     "email": "jarriagada@dcc.uchile.cl",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2023-07-09T19:43:28",
+    "date_joined": "2024-07-09T19:43:28",
     "groups": [],
     "user_permissions": []
   }
@@ -48,7 +48,7 @@
     "email": "dperovic@dcc.uchile.cl",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2023-07-09T19:43:49",
+    "date_joined": "2024-07-09T19:43:49",
     "groups": [],
     "user_permissions": []
   }

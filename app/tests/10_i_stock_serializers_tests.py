@@ -10,7 +10,7 @@ def test_lote_serializer():
     from stock.serializers import LoteSerializer
 
     lote = Lote.objects.create(
-        codigo="AU_PRMINC_100001_CL_CENABAST_20230710_20240816",
+        codigo="AU_PRMINC_100001_CL_CENABAST_20240710_20240816",
         medicamento=Medicamento.objects.all().first(),
         cantidad=50000,
         fecha_vencimiento=str(date(date.today().year + 1, 12, 31)),

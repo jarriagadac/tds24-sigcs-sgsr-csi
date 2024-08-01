@@ -11,13 +11,13 @@ def test_lote_model():
     medicamento = Medicamento.objects.all().first()
     fecha_vencimiento = date(2024, 7, 10)
     lote = Lote.objects.create(
-        codigo="AU_PRMINC_100001_CL_CENABAST_20230710_20240816",
+        codigo="AU_PRMINC_100001_CL_CENABAST_20240710_20240816",
         medicamento=medicamento,
         cantidad=500,
         fecha_vencimiento=fecha_vencimiento,
     )
 
-    assert lote.codigo == "AU_PRMINC_100001_CL_CENABAST_20230710_20240816"
+    assert lote.codigo == "AU_PRMINC_100001_CL_CENABAST_20240710_20240816"
     assert lote.medicamento == medicamento
     assert lote.cantidad == 500
     assert lote.fecha_vencimiento == fecha_vencimiento

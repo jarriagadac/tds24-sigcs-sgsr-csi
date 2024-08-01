@@ -8,7 +8,7 @@ def test_consumo_medicamento(client):
     assert response.status_code == 200, "endpoint no encontrado"
     assert len(response.data) == 1, "se obtuvieron más resultados de los esperados"
 
-    data = {5: {"medicamento": 5, "cantidad": 499500, "consumos": [{"institucion": 1, "cantidad": 499500, "fecha": date(2023, 7, 28)}]}}
+    data = {5: {"medicamento": 5, "cantidad": 499500, "consumos": [{"institucion": 1, "cantidad": 499500, "fecha": date(2024, 7, 28)}]}}
     assert response.data == data, f"data no tiene los datos esperados ({data})"
 
 
@@ -29,7 +29,7 @@ def test_movimientos_medicamento(client):
     assert response.status_code == 200, "endpoint no encontrado"
     assert len(response.data) == 1, "se obtuvieron más resultados de los esperados"
 
-    data = {"medicamento": 5, "movimientos": [{"lote": 20, "institucion": 1, "fecha": date(2023, 7, 28)}]}
+    data = {"medicamento": 5, "movimientos": [{"lote": 20, "institucion": 1, "fecha": date(2024, 7, 28)}]}
     assert list(response.data)[0] == data, f"data no tiene los datos esperados ({data})"
 
 
@@ -84,21 +84,21 @@ def test_alerta_caducidad_lote(client):
     data = [
         {
             "id": 16,
-            "codigo": "SA_NAHRD_5j2mDrL9x0xKCl_20230721_20330721",
+            "codigo": "SA_NAHRD_5j2mDrL9x0xKCl_20240721_20330721",
             "medicamento": 23,
             "cantidad": 450000,
             "fecha_vencimiento": "2022-07-21",
         },
         {
             "id": 17,
-            "codigo": "SE_ASBRD_8N9uLf3P8qfNCl_20230730_20330730",
+            "codigo": "SE_ASBRD_8N9uLf3P8qfNCl_20240730_20330730",
             "medicamento": 34,
             "cantidad": 775000,
             "fecha_vencimiento": "2022-07-30",
         },
         {
             "id": 18,
-            "codigo": "TR_ABDRG_5p3WLiH4m7eFCl_20230726_20330726",
+            "codigo": "TR_ABDRG_5p3WLiH4m7eFCl_20240726_20330726",
             "medicamento": 2,
             "cantidad": 575000,
             "fecha_vencimiento": "2022-07-26",

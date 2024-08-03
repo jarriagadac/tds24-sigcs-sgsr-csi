@@ -8,6 +8,7 @@ init:
 	pip install -r requirements.txt
 	rm -f db.sqlite3
 	make migrate
+	make migrations
 	make loaddata
 
 loaddata:
@@ -17,7 +18,7 @@ loaddata:
 	python manage.py loaddata _fixtures/maestro_item.json
 	python manage.py loaddata _fixtures/maestro_equipamiento.json
 	python manage.py loaddata _fixtures/maestro_quiebre.json
-	# python manage.py loaddata _fixtures/stock.json
+	python manage.py loaddata _fixtures/stock.json
 
 dumpdata:
 	python manage.py dumpdata auth.user --indent 2 > _fixtures/auth_user.json
@@ -45,7 +46,7 @@ update:
 	pur -r requirements.txt
 
 run:
-	python manage.py runserver 0.0.0.0:8000
+	python manage.py runserver localhost:8000
 
 __test_prepare:
 	rm -f stock/migrations/000*.py

@@ -33,7 +33,7 @@ class Stock(models.Model):
     has_quiebre = models.BooleanField(default=False)
 
     class Meta:
-        unique_together = [("institucion", "medicamento")]
+        unique_together = ("institucion", "medicamento")
 
     def __str__(self) -> str:
         return f"{self.institucion} - {self.medicamento} - faltaMedicamento: {self.has_quiebre}"

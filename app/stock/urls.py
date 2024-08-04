@@ -20,10 +20,8 @@ urlpatterns = [
     path("movimientos", MovimientoListCreateView.as_view(), name="movimiento_lc"),
     path("movimientos/<int:pk>", MovimientoRetrieveDestroyView.as_view(), name="movimiento-rud"),
     path("movimientos-medicamento", MovimientoMedicamentoView.as_view(), name="movimiento-medicamento-l"),
-
+    path("movimientos-medicamento/<int:medicamento>", MovimientoMedicamentoView.as_view(), name="movimiento-medicamento-d"),
     # path("movimientos/<int:pk>/lote", MovimientoLoteRetrieveView.as_view(), name="movimiento-lote-lc"),
-    # path("movimientos-medicamento/<int:medicamento>", MovimientoMedicamentoView.as_view(), name="movimiento-medicamento-d"),
-
     # path("consumos-medicamento", ConsumoMedicamentoAPIView.as_view(), name="consumo-medicamento-l"),
     # path("consumos-medicamento/<int:medicamento>", ConsumoMedicamentoAPIView.as_view(), name="consumo-medicamento-d"),
     # path("disponibilidad-medicamento", DisponibilidadMedicamentoAPIView.as_view(), name="disponibilidad-medicamento-l"),

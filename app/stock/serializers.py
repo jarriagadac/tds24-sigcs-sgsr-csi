@@ -21,12 +21,11 @@ class StockSerializer(serializers.ModelSerializer):
         fields = ["id", "institucion", "medicamento", "cantidad", "has_quiebre", "fecha_actualizacion"]
 
     def validate(self, attrs):
-        if Stock.objects.filter(institucion=attrs['institucion'], medicamento=attrs['medicamento']).exists():
+        if Stock.objects.filter(institucion=attrs["institucion"], medicamento=attrs["medicamento"]).exists():
             raise serializers.ValidationError("La combinación de institucion y medicamento ya existe.")
         return attrs
-    
+
 class MovimientoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movimiento
         fields = ["id", "institucion", "lote", "fecha"]
-

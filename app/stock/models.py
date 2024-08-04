@@ -6,18 +6,19 @@ from maestro.models import Medicamento, Institucion
 class Lote(models.Model):
     codigo = models.CharField(max_length=255)
     medicamento = models.ForeignKey(Medicamento, on_delete=models.CASCADE)
-    cantidad = models.PositiveIntegerField()
-    fecha_vencimiento = models.DateField()
+    cantidad = models.PositiveIntegerField(default=0)
+    fecha_vencimiento = models.DateField(default=date.today)
+    has_transfer = models.BooleanField(default=False)
+    vencido = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return f"{self.codigo}"
-        #return f"{self.codigo} ({self.cantidad}) - vence: {self.fecha_vencimiento}" #Comentado por error en test_basicos test_lote_model
 
 
 class Consumo(models.Model):
     institucion = models.ForeignKey(Institucion, on_delete=models.CASCADE)
     medicamento = models.ForeignKey(Medicamento, on_delete=models.CASCADE)
-    cantidad = models.PositiveIntegerField()
+    cantidad = models.PositiveIntegerField(default=0)
     fecha = models.DateField(default=date.today)
 
     def __str__(self) -> str:
@@ -32,7 +33,7 @@ class Stock(models.Model):
     has_quiebre = models.BooleanField(default=False)
 
     class Meta:
-        unique_together = [("institucion", "medicamento")]
+        unique_together = ("institucion", "medicamento")
 
     def __str__(self) -> str:
         return f"{self.institucion} - {self.medicamento} - faltaMedicamento: {self.has_quiebre}"
@@ -40,13 +41,8 @@ class Stock(models.Model):
 
 class Movimiento(models.Model):
     institucion = models.ForeignKey(Institucion, on_delete=models.CASCADE)
-    lote = models.ForeignKey(Lote, on_delete=models.CASCADE)
+    lote = models.OneToOneField(Lote, on_delete=models.CASCADE)
     fecha = models.DateField(default=date.today)
-
-    class Meta:
-        constraints = [
-            models.UniqueConstraint(fields=['lote'], name='unique_lote')
-        ]
 
     def __str__(self) -> str:
         return f"{self.institucion} - {self.lote.codigo} ({self.lote.cantidad}) - fecha: {self.fecha}"

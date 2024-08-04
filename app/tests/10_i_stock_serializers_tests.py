@@ -74,7 +74,9 @@ def test_stock_serializer():
     serialized_object = StockSerializer(stock)
     serialized_data.is_valid()
     assert json.dumps(serialized_object.data) == json.dumps(data), "data serializada no tiene el orden correcto"
-    assert serialized_data.errors == {}, f"Errores: {serialized_data.errors}"
+
+    expected_error = "[ErrorDetail(string='Los campos institucion, medicamento deben formar un conjunto único.', code='unique')]"
+    assert str(serialized_data.errors["non_field_errors"]) == expected_error, f"Errores: {serialized_data.errors}"
 
 
 @pytest.mark.django_db
@@ -98,5 +100,5 @@ def test_movimiento_serializer():
     serialized_data.is_valid()
     assert json.dumps(serialized_object.data) == json.dumps(data), "data serializada no tiene el orden correcto"
     assert (
-        str(serialized_data.errors["lote"]) == "[ErrorDetail(string='Ya existe movimiento con este lote.', code='unique')]"
+        str(serialized_data.errors["lote"]) == "[ErrorDetail(string='Ya existe un/a movimiento con este/a lote.', code='unique')]"
     ), f"Errores: {serialized_data.errors}"

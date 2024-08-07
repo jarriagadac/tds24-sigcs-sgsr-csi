@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import date
-from maestro.models import Medicamento, Institucion
+from maestro.models import Medicamento, Institucion, Quiebre
 
 
 class Lote(models.Model):
@@ -37,6 +37,14 @@ class Stock(models.Model):
 
     def __str__(self) -> str:
         return f"{self.institucion} - {self.medicamento} - faltaMedicamento: {self.has_quiebre}"
+
+    def upd_has_quiebre(self):
+        quiebre = Quiebre.objects.filter(institucion=self.institucion, medicamento=self.medicamento).first()
+        if quiebre:
+            if self.cantidad < quiebre.cantidad:
+                self.has_quiebre = True
+            else:
+                self.has_quiebre = False
 
 
 class Movimiento(models.Model):

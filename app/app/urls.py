@@ -12,7 +12,7 @@ urlpatterns = [
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api-auth/", include("rest_framework.urls")),
     path("redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
-    # path("maestro/", include("stock.urls")),
-    # path("stock/", include("stock.urls")),
-    # path("inventario", include("inventario.urls")),
+    path("maestro/", include("maestro.urls")),
+    path("stock/", include("stock.urls")),
+    # path("inventario/", include("inventario.urls")),
 ]

@@ -7,7 +7,6 @@ def test_consumo_medicamento(client):
     response = client.get("/stock/consumos-medicamento", content_type="application/json")
     assert response.status_code == 200, "endpoint no encontrado"
     assert len(response.data) == 1, "se obtuvieron más resultados de los esperados"
-
     data = {5: {"medicamento": 5, "cantidad": 499500, "consumos": [{"institucion": 1, "cantidad": 499500, "fecha": date(2024, 7, 28)}]}}
     assert response.data == data, f"data no tiene los datos esperados ({data})"
 
@@ -28,7 +27,6 @@ def test_movimientos_medicamento(client):
     response = client.get("/stock/movimientos-medicamento", content_type="application/json")
     assert response.status_code == 200, "endpoint no encontrado"
     assert len(response.data) == 1, "se obtuvieron más resultados de los esperados"
-
     data = {"medicamento": 5, "movimientos": [{"lote": 20, "institucion": 1, "fecha": date(2024, 7, 28)}]}
     assert list(response.data)[0] == data, f"data no tiene los datos esperados ({data})"
 

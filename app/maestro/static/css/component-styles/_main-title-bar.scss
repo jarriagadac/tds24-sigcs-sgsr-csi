@@ -1,0 +1,15 @@
+.main-title-bar{
+  h1{
+    @extend .fs-2;
+    margin-bottom: 0 !important;
+  }
+
+	@extend .d-md-flex;
+	@extend .justify-content-between;
+	@extend .my-3;
+
+	.title-actions{
+	  @extend .d-md-flex;
+	  @extend .align-items-center;
+	}
+}

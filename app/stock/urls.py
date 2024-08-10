@@ -11,6 +11,9 @@ from .views import (
     DisponibilidadMedicamentoAPIView,
     QuiebreStockAPIView,
     AlertaCaducidadLoteAPIView,
+    lista_movimientos,
+    lista_caducados,
+    lista_disponibilidad_medicamentos
 )
 
 app_name = "stock"
@@ -28,4 +31,12 @@ urlpatterns = [
     path("disponibilidad-medicamento/<int:medicamento>", DisponibilidadMedicamentoAPIView.as_view(), name="disponibilidad-medicamento-d"),
     path("quiebre-stock", QuiebreStockAPIView.as_view(), name="quiebre-stock"),
     path("alerta-caducidad-lote", AlertaCaducidadLoteAPIView.as_view(), name="alerta-caducidad-lote"),
+
+
+    path('movimientos/', lista_movimientos, name='list_movements'),
+    path('caducidad/', lista_caducados, name='list_caducados'),
+    path('disponibilidad/', lista_disponibilidad_medicamentos, name='list_medicamentos'),
+
+
+    
 ]

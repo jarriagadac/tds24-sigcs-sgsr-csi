@@ -1,0 +1,44 @@
+.uploader{
+  @extend .mb-4;
+  .columns{
+    @extend .col-lg-8;
+    @extend .offset-lg-2;
+    @extend .col-md-10;
+    @extend .offset-md-1;
+  }
+  .card{
+    @extend .py-4;
+    @extend .px-5;
+    @extend .border-0;
+    h3{
+      @extend .fs-5;
+    }
+    form{
+      @extend .my-4;
+      .select-file{
+        @extend .d-flex;
+        @extend .justify-content-between;
+        @extend .align-items-center;
+
+        .submit-button{
+          @extend .ms-2;
+        }
+      }
+    }
+    .uploader-tools{
+      button{
+        @extend .me-2;
+      }
+    }
+    .uploader-alerts{
+      .alert{
+        @extend .mt-4;
+        @extend .d-flex;
+        @extend .align-items-center;
+        i{
+          @extend .me-2;
+        }
+      }
+    }
+  }
+}

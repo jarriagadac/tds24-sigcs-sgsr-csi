@@ -1,0 +1,25 @@
+.navbar{
+  @extend .navbar-expand-lg;
+  @extend .px-4;
+  @extend .border-bottom;
+}
+.logo{
+  @extend .m-0;
+  transition: margin 0.25s ease-out;
+}
+.toggled .logo{
+  @extend .ms-5;
+}
+.menu-icon {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  @extend .mt-3;
+  @extend .ms-3;
+  @extend .text-black;
+  @extend .me-3;
+  span{
+    @extend .fs-1;
+  }
+
+}

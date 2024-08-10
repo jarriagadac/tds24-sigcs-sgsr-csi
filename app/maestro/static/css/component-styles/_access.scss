@@ -1,0 +1,32 @@
+.access-page {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .vh-100;
+  .card{
+    width: 500px;
+    @extend .p-4;
+    h1{
+      @extend .text-center;
+      @extend .pb-3;
+    }
+    .actions{
+      @extend .d-sm-flex;
+      @extend .justify-content-between;
+      @extend .align-items-center;
+      button{
+        @extend .float-end;
+        @extend .my-2;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .access-page {
+    .card{
+      width: 100%;
+      padding: 0.5rem !important;
+    }
+  }
+}
+

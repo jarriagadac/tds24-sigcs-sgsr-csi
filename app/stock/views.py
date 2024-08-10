@@ -7,6 +7,9 @@ from .serializers import ConsumoSerializer, MovimientoSerializer
 from .models import Movimiento, Consumo, Lote, Stock
 from datetime import datetime
 from maestro.models import Medicamento, Quiebre
+from django.core.paginator import Paginator
+from django.utils import timezone
+from django.shortcuts import render
 
 logger = logging.getLogger("myapp")
 
@@ -167,7 +170,7 @@ class MovimientoMedicamentoView(APIView):
             result = list(movimiento_medicamento.values())
 
             return Response(result, status=status.HTTP_200_OK)
-
+        
         except Exception as e:
             logger.error(f"Error: {e}")
             return Response({"error": "Hubo un problema al obtener los movimientos."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -204,3 +207,26 @@ class ConsumoRetrieveDestroyView(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Consumo.DoesNotExist:
             raise NotFound(detail="Consumo no encontrado")
+        
+
+def lista_movimientos(request):
+    movement_list = Movimiento.objects.all()
+    paginator = Paginator(movement_list, 10)
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    now = timezone.now()
+    context = {
+        'movements': page_obj,
+        'now': now,
+        'page_obj': page_obj,
+    }
+    return render(request, 'stock/medication_movement_list.html', context)
+
+
+def lista_caducados(request):
+    return render(request, 'stock/caducidad_medicamentos_list.html')
+
+def lista_disponibilidad_medicamentos(request):
+    return render(request, 'stock/disponibilidad_medicamentos_list.html')

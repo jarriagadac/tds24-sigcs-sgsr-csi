@@ -1,0 +1,6 @@
+.alert-debug {
+  @extend .bg-warning;
+}
+.alert-error {
+  @extend .bg-danger;
+}

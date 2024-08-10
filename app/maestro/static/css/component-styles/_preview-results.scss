@@ -1,0 +1,25 @@
+.preview-results{
+  .preview-tools{
+    @extend .d-flex;
+    @extend .justify-content-between;
+    @extend .my-3;
+    .summary{
+      @extend .d-flex;
+      @extend .align-items-center;
+      h4{
+        @extend .fs-4;
+        @extend .pe-2;
+        @extend .mb-0;
+      }
+      .badge{
+        @extend .me-2;
+        @extend .fs-6;
+      }
+    }
+    .save-data{
+      @extend .d-flex;
+      @extend .align-items-center;
+    }
+  }
+
+}

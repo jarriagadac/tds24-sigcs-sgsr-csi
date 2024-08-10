@@ -1,0 +1,17 @@
+{% extends '../base.html' %}
+
+{% block title %} Mover {% endblock %}
+
+{% block content %}
+
+<h2>Realizar envio de medicamentos</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Enviar Lote</button>
+    </div>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+$victory-light:			tint-color($victory, $btn-hover-bg-tint-amount);
+$victory-dark:			shade-color($victory, $btn-hover-bg-shade-amount);
+
+$colors: (
+		'victory' $victory $victory-light $victory-dark,
+	);
+
+@each $colorClass, $colorVar, $lightVar, $darkVar in $colors {
+	@each $colorClass, $colorVar, $lightVar, $darkVar in $colors {
+		.bg-#{$colorClass} {
+			background-color: $colorVar;
+			color: color-contrast($colorVar);}
+		.text-#{$colorClass} {
+			color: $colorVar;
+			caret-color: $colorVar;}
+		.btn-#{$colorClass} {
+			background-color: $colorVar;
+			border-color: $colorVar;
+			color: color-contrast($colorVar);
+			&:hover {
+				background-color: $lightVar !important;
+				border-color: $lightVar !important;
+				color: color-contrast($lightVar) !important;
+      }
+    }
+		.btn-outline-#{$colorClass} {
+			background-color: $lightVar;
+			border-color: $colorVar;
+			color: color-contrast($lightVar);
+			&:hover {
+				background-color: $lightVar !important;
+				border-color: $lightVar !important;
+				color: color-contrast($lightVar) !important;
+      }
+    }
+	}
+}

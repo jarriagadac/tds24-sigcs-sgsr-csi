@@ -1,0 +1,50 @@
+.modal {
+  @extend .fade;
+
+  .modal-dialog {
+    .modal-header,
+    .modal-footer{
+      @extend .py-2;
+      @extend .px-3;
+    }
+
+    .modal-body{
+      @extend .bg-light;
+    }
+  }
+}
+
+#modalEditInstitutionTable,
+#modalEditProgramTable{
+  .card-body{
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-end;
+  }
+}
+
+// swal2 alert modal component
+.swal2-container{
+  .swal2-popup{
+    .swal2-close{
+      @extend .text-dark;
+    }
+    .swal2-icon{
+      @extend .fs-6;
+    }
+    .swal2-title{
+      @extend .fs-3;
+    }
+    .swal2-actions{
+      @extend .w-100;
+      @extend .d-flex;
+      @extend .px-3;
+      .btn{
+        @extend .mx-2;
+      }
+      .btn-secondary{
+        @extend .btn-outline-primary;
+      }
+    }
+  }
+}

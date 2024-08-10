@@ -1,0 +1,10 @@
+.login-page{
+  .alert{
+    ul{
+      @extend .p-0;
+      li{
+        list-style: none;
+      }
+    }
+  }
+}

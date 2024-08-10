@@ -1,0 +1,18 @@
+ul.pagination{
+  @extend .my-4;
+  @extend .justify-content-center;
+  .pages{
+    @extend .d-flex;
+  }
+  li{
+    @extend .mx-1;
+    .page-link{
+      @extend .rounded-pill;
+      @extend .border;
+    }
+    &.disabled{
+      @extend .opacity-50;
+    }
+  }
+}
+

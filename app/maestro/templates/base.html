@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %} | STOCK</title>
+
+  {% load static %}
+  {% block css %}
+  <link href="{% static 'css/' %}stock.css" rel="stylesheet" />
+  {% endblock %}
+
+
+
+  {% block javascript %}
+  <!-- Bootstrap JS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script defer src="{% static 'js/project.js' %}"></script>
+  {% endblock javascript %}
+
+</head>
+
+<body>
+
+  {% url 'stock:list_movements' as ver_envios%}
+  {% url 'stock:list_caducados' as caducados %}
+  {% url 'stock:list_medicamentos' as medicamentos_disponibles%}
+
+  <!-- cabecera y menu -->
+  <div id="wrapper" class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="nav">
+
+        <li class="nav-item">
+          <a href="{{ver_envios}}" class="nav-link {% if request.path == ver_envios %}active{% endif %}">
+            <span class="material-symbols-outlined">Ver Envios</span>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="{{caducados}}" class="nav-link {% if request.path == caducados %}active{% endif %}">
+            <span class="material-symbols-outlined">Ver Caducidad</span>
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{medicamentos_disponibles}}" class="nav-link {% if request.path == medicamentos_disponibles %}active{% endif %}">
+            <span class="material-symbols-outlined">Medicamentos Disponibles</span>
+
+          </a>
+        </li>
+    </div>
+
+
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <!-- contenido -->
+      <div class="container-fluid px-4">
+        <div class="m-5 m-xs-1">
+          {% block content %}{% endblock content %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% block javascript2 %}{% endblock javascript2 %}
+
+</body>
+
+</html>

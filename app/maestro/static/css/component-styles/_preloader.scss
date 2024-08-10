@@ -1,0 +1,9 @@
+.page-preloader{
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  height: 70vh;
+}
+.spinner-border{
+  @extend .text-primary;
+}

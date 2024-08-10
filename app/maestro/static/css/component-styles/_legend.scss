@@ -1,0 +1,180 @@
+// Legend
+.hide-rating-boxes{
+  display: none;
+}
+.legend{
+  font-size: 0.8rem;
+  @extend .d-md-flex;
+  .legend-item{
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .mx-1;
+    @extend .my-1;
+    @extend .py-1;
+    @extend .px-3;
+    @extend .rounded-pill;
+    @extend .border;
+
+    span{
+      margin-right: 8px;
+    }
+    .rating-success > div{
+      &:nth-child(4){
+        @extend .hide-rating-boxes;
+      }
+    }
+    .rating-warning > div{
+      &:nth-child(3),
+      &:nth-child(4){
+        @extend .hide-rating-boxes;
+      }
+    }
+    .rating-danger > div{
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4){
+        @extend .hide-rating-boxes;
+      }
+    }
+
+  }
+}
+
+// Ratings
+.toggle-rating-boxes{
+  display: block;
+  background-color: transparent !important;
+}
+.rating{
+  @extend .d-flex;
+  > div{
+    margin: 0 2px;
+  }
+  &.rating-victory > div {
+    @extend .bg-victory;
+  }
+  &.rating-success > div {
+    @extend .bg-success;
+    &:nth-child(4){
+      @extend .toggle-rating-boxes;
+    }
+  }
+  &.rating-warning > div {
+    @extend .bg-warning;
+    &:nth-child(3),
+    &:nth-child(4){
+      @extend .toggle-rating-boxes;
+    }
+  }
+  &.rating-danger > div {
+    @extend .bg-danger;
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4){
+      @extend .toggle-rating-boxes;
+    }
+  }
+  &.rating-sm > div {
+    height: 7px;
+    width: 7px;
+  }
+  &.rating-lg > div {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+// Legend inside KPI modal
+.kpi-styles{
+  border: none !important;
+  font-size: 16px;
+  span{
+    margin-left: 6px;
+  }
+}
+.overall{
+  .legend{
+    &.legend-victory > div{
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4){
+        @extend .d-none;
+      }
+    }
+    &.legend-success > div{
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(4){
+        @extend .d-none;
+      }
+    }
+    &.legend-warning > div{
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(4){
+        @extend .d-none;
+      }
+    }
+    &.legend-danger > div{
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3){
+        @extend .d-none;
+      }
+    }
+    .legend-item{
+      @extend .kpi-styles;
+      @extend .p-0;
+      @extend .m-0;
+      .rating-success > div {
+        &:nth-child(4){
+          @extend .toggle-rating-boxes;
+        }
+      }
+      .rating-warning > div {
+        &:nth-child(3),
+        &:nth-child(4){
+          @extend .toggle-rating-boxes;
+        }
+      }
+      .rating-danger > div {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4){
+          @extend .toggle-rating-boxes;
+        }
+      }
+    }
+
+  }
+}
+
+// Rating inside buttons
+.button-styles{
+  @extend .d-inline-block;
+  background-color: transparent !important;
+}
+.btn .legend .rating {
+  > div{
+    margin: 2px;
+    background-color: white !important;
+  }
+  &.rating-success > div {
+    &:nth-child(4){
+      @extend .button-styles;
+    }
+  }
+  &.rating-warning > div {
+    &:nth-child(3),
+    &:nth-child(4){
+      @extend .button-styles;
+    }
+  }
+  &.rating-danger > div {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4){
+      @extend .button-styles;
+    }
+  }
+}

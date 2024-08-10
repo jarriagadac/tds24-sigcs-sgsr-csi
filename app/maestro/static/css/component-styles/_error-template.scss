@@ -1,0 +1,18 @@
+.error-template{
+  min-height: 50vh;
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+  @extend .mw-100;
+
+  p.message{
+    @extend .fs-4;
+  }
+
+  .main-icon{
+    font-size: 7rem;
+    @extend .text-danger;
+    @extend .mb-3;
+  }
+}

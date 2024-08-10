@@ -1,0 +1,57 @@
+.table-data{
+  @extend .table-responsive;
+  @extend .my-4;
+  @extend .fs-6;
+
+  .search-table{
+    @extend .d-inline-flex;
+  }
+
+  table{
+    @extend .my-2;
+    @extend .table;
+    @extend .table-hover;
+    thead{
+      @extend .fs-7;
+    }
+
+    tbody{
+      @extend .table-group-divider;
+      border-top-color: $border-color;
+    }
+  }
+}
+
+.updateTableRow td input {
+  @extend .text-center;
+  @extend .px-0;
+}
+
+table {
+  th{
+      vertical-align: top;
+      @extend .fs-6;
+      .header-sort{
+          @extend .d-flex;
+          &.right{
+            @extend .justify-content-end;
+          }
+      }
+      .material-symbols-outlined{
+        font-size: 1rem;
+        @extend .text-muted;
+      }
+  }
+}
+
+.table-success-alt {
+background-color: $success !important;
+}
+
+.table-danger-alt {
+background-color: $danger !important;
+}
+
+.table-warning-alt {
+background-color: $warning !important;
+}

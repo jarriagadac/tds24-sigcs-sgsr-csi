@@ -1,0 +1,68 @@
+label,
+.form-label,
+.col-form-label{
+  @extend .fw-bolder;
+  @extend .mt-2;
+  @extend .mb-1;
+}
+.form-control,
+.form-select{
+  &:focus{
+    @extend .border-primary;
+  }
+}
+.form-control-plaintext{
+  @extend .pt-0;
+  @extend .pb-3;
+}
+.form-check-input{
+  @extend .mt-2;
+  @extend .me-1;
+}
+.asteriskField{
+  @extend .text-danger;
+  @extend .ps-1;
+}
+// -----------------------------
+// Buttons
+.btn{
+  @extend .mx-1;
+  line-height: 1.5;
+}
+.input-group{
+  .btn {
+      @extend .mx-0;
+  }
+}
+.btn-icon {
+  @extend .me-1;
+  @extend .p-0;
+
+  .material-symbols-outlined{
+    font-size: 1.3rem;
+    @extend .text-info;
+  }
+  &.edit-button:hover .material-symbols-outlined{
+    @extend .text-success;
+  }
+  &.delete-button:hover .material-symbols-outlined{
+    @extend .text-danger;
+  }
+  &.save-button:hover .material-symbols-outlined{
+    @extend .text-primary;
+  }
+}
+
+// Alert buttons
+.swal2-actions{
+  button.swal2-confirm{
+      &.btn.btn-danger,
+      &.swal2-styled{
+          @extend .btn-primary;
+          @extend .btn;
+          &:focus{
+            @extend .border-primary;
+          }
+      }
+  }
+}

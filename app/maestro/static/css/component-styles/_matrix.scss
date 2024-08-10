@@ -1,0 +1,41 @@
+.matrix{
+  @extend .mb-5;
+
+  .matrix-search{
+    @extend .d-md-flex;
+    @extend .justify-content-between;
+    @extend .align-items-end;
+    @extend .mb-4;
+    .row{
+      @extend .g-3;
+      @extend .flex-fill;
+      label{
+        @extend .mb-1;
+      }
+      .search-button{
+        @extend .d-flex;
+        @extend .align-items-end;
+      }
+    }
+  }
+
+  .matrix-table{
+    @extend .container;
+    @extend .pt-3;
+    @extend .my-4;
+
+    hr{
+      @extend .py-1;
+      @extend .mt-2;
+      @extend .mb-0;
+      @extend .pb-0;
+    }
+
+  }
+  .table-data{
+    @extend .mt-0;
+    table{
+      @extend .my-0;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{% extends '../base.html' %}
+
+{% block title %}List{% endblock %}
+
+{% block content %}
+<h1>Lista de Movimientos de Medicamentos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo del lote</th>
+            <th>Institución</th>
+            <th>Nombre</th>
+            <th>Fecha vencimiento</th>
+            <th>Fecha envio</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for movement in movements %}
+            <tr>
+                <td>{{ movement.lote.codigo }}</td>
+                <td>{{ movement.institucion }}</td>
+                <td>{{ movement.lote.medicamento.nombre_comercial }}</td>
+                <td>{{ movement.lote.fecha_vencimiento }}</td>
+                <td>{{ movement.fecha }}</td>
+                <td>
+                    {% if movement.fecha < now %}
+                       <span class="badge bg-success">Enviado</span>
+                    {% else %}
+                    <span class="badge bg-warning">Sin Enviar</span>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if movement.fecha > now %}
+                       <button class="btn btn-primary btn-sm">Cancelar</span>
+                    {% endif %}
+                </td>
+
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="4">No hay movimientos disponibles.</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Paginación -->
+    {% if  page_obj.paginator.num_pages > 1 %}
+    <div class="pagination d-flex justify-content-center">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; primera</a>
+                <a href="?page={{ page_obj.previous_page_number }}">anterior</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">proxima</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">ultima &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+    {% endif %}
+{% endblock %}

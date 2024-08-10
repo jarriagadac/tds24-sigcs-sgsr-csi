@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE|default:'en-us' }}" dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard de Medicamentos</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              background-color: #f4f4f4;
+          }
+          h1 {
+              margin-top: 20px;
+          }
+          .dashboard {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 20px;
+              width: 90%;
+              max-width: 1200px;
+              margin: 20px auto;
+          }
+          .chart-container {
+              background: #fff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          }
+          canvas {
+              width: 100% !important;
+              height: auto !important;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <h1>Dashboard de Medicamentos</h1>
+  <div class="dashboard">
+      <!-- Histórico de Movimientos por Medicamento -->
+      <div class="chart-container">
+          <h2>Histórico de Movimientos por Medicamento</h2>
+          <canvas id="historico_movimientos"></canvas>
+      </div>
+  
+      <!-- Caducidad de Medicamentos -->
+      <div class="chart-container">
+          <h2>Caducidad de Medicamentos</h2>
+          <canvas id="caducidadMedicamentos"></canvas>
+      </div>
+  
+      <!-- Disponibilidad de Medicamentos -->
+      <div class="chart-container">
+          <h2>Disponibilidad de Medicamentos</h2>
+          <canvas id="disponibilidadMedicamentos"></canvas>
+      </div>
+  
+      <!-- Quiebre de Stock de Medicamentos -->
+      <div class="chart-container">
+          <h2>Quiebre de Stock de Medicamentos</h2>
+          <canvas id="quiebreStockMedicamentos"></canvas>
+      </div>
+  
+      <!-- Consumo Mensual de Medicamentos -->
+      <div class="chart-container">
+          <h2>Consumo Mensual de Medicamentos</h2>
+          <canvas id="consumoMensualMedicamentos"></canvas>
+      </div>
+  </div>
+  
+  <script>
+      // Configuración del gráfico Histórico de Movimientos por Medicamento
+      const ctx1 = document.getElementById('historico_movimientos').getContext('2d');
+      new Chart(ctx1, {
+          type: 'line',
+          data: {
+              labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+              datasets: [
+                  {
+                      label: 'Medicamento A',
+                      data: [12, 19, 3, 5, 2, 3],
+                      borderColor: 'rgba(255, 99, 132, 1)',
+                      fill: false
+                  },
+                  {
+                      label: 'Medicamento B',
+                      data: [2, 29, 5, 5, 2, 10],
+                      borderColor: 'rgba(54, 162, 235, 1)',
+                      fill: false
+                  }
+              ]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  
+      // Configuración del gráfico Caducidad de Medicamentos
+      const ctx2 = document.getElementById('caducidadMedicamentos').getContext('2d');
+      new Chart(ctx2, {
+          type: 'bar',
+          data: {
+              labels: ['Medicamento A', 'Medicamento B', 'Medicamento C'],
+              datasets: [{
+                  label: 'Días para Caducar',
+                  data: [30, 45, 60],
+                  backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                  borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)'],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  
+      // Configuración del gráfico Disponibilidad de Medicamentos
+      const ctx3 = document.getElementById('disponibilidadMedicamentos').getContext('2d');
+      new Chart(ctx3, {
+          type: 'bar',
+          data: {
+              labels: ['Medicamento A', 'Medicamento B', 'Medicamento C'],
+              datasets: [{
+                  label: 'Disponibilidad (Unidades)',
+                  data: [100, 50, 75],
+                  backgroundColor: ['rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)'],
+                  borderColor: ['rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  
+      // Configuración del gráfico Quiebre de Stock de Medicamentos
+      const ctx4 = document.getElementById('quiebreStockMedicamentos').getContext('2d');
+      new Chart(ctx4, {
+          type: 'line',
+          data: {
+              labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+              datasets: [{
+                  label: 'Medicamento A',
+                  data: [50, 40, 30, 20, 10, 5],
+                  borderColor: 'rgba(255, 99, 132, 1)',
+                  fill: false
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  
+      // Configuración del gráfico Consumo Mensual de Medicamentos
+      const ctx5 = document.getElementById('consumoMensualMedicamentos').getContext('2d');
+      new Chart(ctx5, {
+          type: 'bar',
+          data: {
+              labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+              datasets: [{
+                  nom: 'Consumo (Unidades)',
+                  data: [30, 25, 40, 35, 45, 50],
+                  backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                  borderColor: 'rgba(54, 162, 235, 1)',
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  </script>
+  
+  </body>
+  </html>

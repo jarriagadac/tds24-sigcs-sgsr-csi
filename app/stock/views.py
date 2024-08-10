@@ -1,3 +1,4 @@
+from django.views.generic import ListView
 from rest_framework import generics, status
 from rest_framework.response import Response
 from .models import Movimiento, Consumo, Stock, Quiebre, Lote
@@ -171,3 +172,13 @@ class AlertaCaducidadLoteAPIView(generics.ListAPIView):
     queryset = Lote.objects.filter(fecha_vencimiento__lt=date.today())
     serializer_class = LoteSerializer
     http_method_names = ["get"]
+
+
+class MovimientoMedicamentoListView(ListView):
+    model = Movimiento
+    template_name = "movimientos_medicamentos_graph.html"
+    context_object_name = "historico_movimientos"
+
+    def get_queryset(self):
+        queryset = Movimiento.objects.all()
+        return MovimientoReadSerializer(queryset, many=True).data

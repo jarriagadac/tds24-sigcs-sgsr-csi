@@ -11,6 +11,7 @@ from .views import (
     DisponibilidadMedicamentoAPIView,
     QuiebreStockAPIView,
     AlertaCaducidadLoteAPIView,
+    MovimientoMedicamentoListView,
 )
 
 app_name = "stock"
@@ -28,4 +29,5 @@ urlpatterns = [
     path("disponibilidad-medicamento/<int:medicamento>", DisponibilidadMedicamentoAPIView.as_view(), name="disponibilidad-medicamento-d"),
     path("quiebre-stock", QuiebreStockAPIView.as_view(), name="quiebre-stock"),
     path("alerta-caducidad-lote", AlertaCaducidadLoteAPIView.as_view(), name="alerta-caducidad-lote"),
+    path("graph/movimientos-medicamentos-graph", MovimientoMedicamentoListView.as_view(), name="movimientos_medicamentos_graph-v"),
 ]

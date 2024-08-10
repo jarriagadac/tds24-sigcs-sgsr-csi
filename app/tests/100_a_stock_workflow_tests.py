@@ -24,11 +24,11 @@ def test_workflow_calculo_stock():
     Movimiento.objects.create(institucion=institucion, lote=lote1)
     Movimiento.objects.create(institucion=institucion, lote=lote2)
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
-    assert stock.cantidad == 15000, "cada movimiento debe actualizar (aumentar) la cantidad del stock"
+    assert stock.cantidad == 15000, "cada movimiento debe actualizar (aumentar) la cantidad del stock"  # type: ignore
 
     Consumo.objects.create(institucion=institucion, medicamento=medicamento, cantidad=10000)
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
-    assert stock.cantidad == 5000, "cada consumo debe actualizar (descontar) la cantidad del stock"
+    assert stock.cantidad == 5000, "cada consumo debe actualizar (descontar) la cantidad del stock"  # type: ignore
 
 
 @pytest.mark.django_db
@@ -38,8 +38,8 @@ def test_workflow_calculo_quiebre_stock():
     from .functions import upd_stock_medicamento_institucion
 
     quiebre = Quiebre.objects.all().first()
-    institucion = quiebre.institucion
-    medicamento = quiebre.medicamento
+    institucion = quiebre.institucion  # type: ignore
+    medicamento = quiebre.medicamento  # type: ignore
     upd_stock_medicamento_institucion()
 
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
@@ -50,17 +50,17 @@ def test_workflow_calculo_quiebre_stock():
     lote2 = Lote.objects.create(codigo="LOTE_TEST_4", medicamento=medicamento, cantidad=10000, fecha_vencimiento=fecha_vencimiento)
     Movimiento.objects.create(institucion=institucion, lote=lote1)
 
-    consumo = lote1.cantidad - quiebre.cantidad
+    consumo = lote1.cantidad - quiebre.cantidad  # type: ignore
     Consumo.objects.create(institucion=institucion, medicamento=medicamento, cantidad=consumo)
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
     assert (
-        stock.has_quiebre
+        stock.has_quiebre  # type: ignore
     ), "cada consumo debe actualizar el quiebre de stock (stock.cantidad == quiebre.cantidad => stock.has_quiebre=True)"
 
     Movimiento.objects.create(institucion=institucion, lote=lote2)
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
     assert (
-        not stock.has_quiebre
+        not stock.has_quiebre  # type: ignore
     ), "cada movimiento debe actualizar el quiebre de stock (stock.cantidad == quiebre.cantidad => stock.has_quiebre=True)"
 
 
@@ -81,4 +81,4 @@ def test_workflow_calculo_caducidad():
     Movimiento.objects.create(institucion=institucion, lote=lote2)
     stock = Stock.objects.filter(institucion=institucion, medicamento=medicamento).first()
     # esto corresponde a una simplificación de los ajustes por caducidad
-    assert stock.cantidad == 10000, "movimientos de lotes vencidos no deben aumentar la cantidad de stock"
+    assert stock.cantidad == 10000, "movimientos de lotes vencidos no deben aumentar la cantidad de stock"  # type: ignore

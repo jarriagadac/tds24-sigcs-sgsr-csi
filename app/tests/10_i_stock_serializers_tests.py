@@ -98,5 +98,5 @@ def test_movimiento_serializer():
     serialized_data.is_valid()
     assert json.dumps(serialized_object.data) == json.dumps(data), "data serializada no tiene el orden correcto"
     assert (
-        str(serialized_data.errors["lote"]) == "[ErrorDetail(string='Ya existe movimiento con este lote.', code='unique')]"
+        str(serialized_data.errors["lote"]) == "[ErrorDetail(string='Ya existe un/a movimiento con este/a lote.', code='unique')]"
     ), f"Errores: {serialized_data.errors}"

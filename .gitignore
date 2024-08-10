@@ -10,3 +10,6 @@ app/stock/migrations/000*.py
 
 .idea
 .vscode
+
+.DS_Store
+app/.DS_Store

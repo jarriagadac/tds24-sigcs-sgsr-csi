@@ -159,4 +159,5 @@ def test_add_consumo_invalid_json(client):
         },
         content_type="application/json",
     )
+
     assert response.status_code == 400, "endpoint no encontrado / no se debe permitir data mal formada"

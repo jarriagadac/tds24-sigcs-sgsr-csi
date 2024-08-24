@@ -8,21 +8,16 @@ def test_institucion_serializer():
     from maestro.serializers import InstitucionSerializer
 
     institucion = Institucion.objects.create(
-        nombre = "INSTITUCIÓN TEST",
-        tipo = "farmacia",
-        titularidad = "publico",
-        num_camas_uti = 0,
-        num_camas_uci = 0,
-        factor = 0.0
+        nombre="INSTITUCIÓN TEST", tipo="farmacia", titularidad="publico", num_camas_uti=0, num_camas_uci=0, factor=0.0
     )
-    
+
     data = {
         "nombre": institucion.nombre,
-        "tipo" :institucion.tipo,
-        "titularidad" : institucion.titularidad,
-        "num_camas_uti" : institucion.num_camas_uti,
-        "num_camas_uci" : institucion.num_camas_uci,
-        "factor" : institucion.factor
+        "tipo": institucion.tipo,
+        "titularidad": institucion.titularidad,
+        "num_camas_uti": institucion.num_camas_uti,
+        "num_camas_uci": institucion.num_camas_uci,
+        "factor": institucion.factor,
     }
 
     serialized_data = InstitucionSerializer(data=data)
@@ -37,22 +32,22 @@ def test_medicamento_serializer():
     from maestro.serializers import MedicamentoSerializer
 
     medicamento = Medicamento.objects.create(
-        nombre_comercial = "medicamento prueba",
-        nombre_generico = "Mprueba",
-        ingredientes = "test",
-        concentracion = "400mg",
-        forma_presentacion = "blister",
-        forma_farmaceutica = "tabletas",
-        via_administracion = "oral",
-        indicaciones_terapeuticas = "Alivio temporal de dolores leves a moderados, como dolores de cabeza, dolores musculares, dolor de espalda, dolor de muelas, dolor menstrual y dolor de artritis.",
-        contraindicaciones = "No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o hemorragia gastrointestinal, insuficiencia cardíaca grave o enfermedad hepática grave.",
-        efectos_secundarios = "Algunos efectos secundarios pueden incluir malestar estomacal, náuseas, vómitos, diarrea, mareos, dolor de cabeza y erupciones en la piel. En casos raros, puede causar reacciones alérgicas graves.",
-        instrucciones_dosificacion = "La dosis recomendada para adultos es de 400mg cada 4 a 6 horas, no excediendo los 1,200mg en 24 horas. Consulte a su médico para obtener instrucciones específicas.",
-        fabricante = "Laboratorios Chile S.A.",
-        informacion_almacenamiento = "Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
-        interacciones_medicamentosas = "El ibuprofeno puede interactuar con otros medicamentos, como anticoagulantes, antihipertensivos, aspirina, corticosteroides y diuréticos. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones."
+        nombre_comercial="medicamento prueba",
+        nombre_generico="Mprueba",
+        ingredientes="test",
+        concentracion="400mg",
+        forma_presentacion="blister",
+        forma_farmaceutica="tabletas",
+        via_administracion="oral",
+        indicaciones_terapeuticas="Alivio temporal de dolores leves a moderados, como dolores de cabeza, dolores musculares, dolor de espalda, dolor de muelas, dolor menstrual y dolor de artritis.",
+        contraindicaciones="No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o hemorragia gastrointestinal, insuficiencia cardíaca grave o enfermedad hepática grave.",
+        efectos_secundarios="Algunos efectos secundarios pueden incluir malestar estomacal, náuseas, vómitos, diarrea, mareos, dolor de cabeza y erupciones en la piel. En casos raros, puede causar reacciones alérgicas graves.",
+        instrucciones_dosificacion="La dosis recomendada para adultos es de 400mg cada 4 a 6 horas, no excediendo los 1,200mg en 24 horas. Consulte a su médico para obtener instrucciones específicas.",
+        fabricante="Laboratorios Chile S.A.",
+        informacion_almacenamiento="Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
+        interacciones_medicamentosas="El ibuprofeno puede interactuar con otros medicamentos, como anticoagulantes, antihipertensivos, aspirina, corticosteroides y diuréticos. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones.",
     )
-    
+
     data = {
         "nombre_comercial": medicamento.nombre_comercial,
         "nombre_generico": medicamento.nombre_generico,
@@ -67,7 +62,7 @@ def test_medicamento_serializer():
         "instrucciones_dosificacion": medicamento.instrucciones_dosificacion,
         "fabricante": medicamento.fabricante,
         "informacion_almacenamiento": medicamento.informacion_almacenamiento,
-        "interacciones_medicamentosas": medicamento.interacciones_medicamentosas
+        "interacciones_medicamentosas": medicamento.interacciones_medicamentosas,
     }
 
     serialized_data = MedicamentoSerializer(data=data)
@@ -75,6 +70,7 @@ def test_medicamento_serializer():
     serialized_data.is_valid()
     assert json.dumps(serializer_item.data) == json.dumps(data), "data serializada no tiene el mismo orden"
     assert serialized_data.errors == {}, f"Errores: {serialized_data.errors}"
+
 
 @pytest.mark.django_db
 def test_item_serializer():
@@ -95,6 +91,7 @@ def test_item_serializer():
     serialized_data.is_valid()
     assert json.dumps(serializer_item.data) == json.dumps(data), "data serializada no tiene el mismo orden"
     assert serialized_data.errors == {}, f"Errores: {serialized_data.errors}"
+
 
 @pytest.mark.django_db
 def test_equipamiento_serializer():
@@ -119,6 +116,7 @@ def test_equipamiento_serializer():
     assert json.dumps(serializer_item.data) == json.dumps(data), "data serializada no tiene el mismo orden"
     assert serialized_data.errors == {}, f"Errores: {serialized_data.errors}"
 
+
 @pytest.mark.django_db
 def test_quiebre_serializer():
     from maestro.serializers import QuiebreSerializer
@@ -131,7 +129,7 @@ def test_quiebre_serializer():
     data = {
         "institucion": quiebre_existente.institucion.id,
         "medicamento": quiebre_existente.medicamento.id,
-        "cantidad": quiebre_existente.cantidad
+        "cantidad": quiebre_existente.cantidad,
     }
 
     serializer_item = QuiebreSerializer(quiebre_existente)
@@ -140,8 +138,4 @@ def test_quiebre_serializer():
 
     assert not serialized_data.is_valid(), f"Errores: {serialized_data.errors}"
 
-    assert serializer_item.data == data, (
-        f"Data serializada no coincide: "
-        f"expected {data} but got {serializer_item.data}"
-    )
-
+    assert serializer_item.data == data, f"Data serializada no coincide: " f"expected {data} but got {serializer_item.data}"

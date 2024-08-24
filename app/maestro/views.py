@@ -2,8 +2,9 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from .models import Institucion, Medicamento, Item, Equipamiento, Quiebre
+from .models import Institucion, Medicamento, Equipamiento, Quiebre
 from .serializers import InstitucionSerializer, MedicamentoSerializer, ItemSerializer, EquipamientoSerializer, QuiebreSerializer
+
 
 class InstitucionGetCreateView(APIView):
     def get(self, request):
@@ -19,6 +20,7 @@ class InstitucionGetCreateView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class ItemGetCreateView(APIView):
     def get(self, request):
         consumos = ItemGetCreateView.objects.all()  # Obtén todas las instituciones
@@ -32,6 +34,7 @@ class ItemGetCreateView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class MedicamentoGetCreateView(APIView):
     def get(self, request):
@@ -47,6 +50,7 @@ class MedicamentoGetCreateView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
 class EquipamientoGetCreateView(APIView):
     def get(self, request):
         consumos = Equipamiento.objects.all()  # Obtén todas las instituciones
@@ -60,6 +64,7 @@ class EquipamientoGetCreateView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class QuiebreGetCreateView(APIView):
     def get(self, request):

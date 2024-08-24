@@ -1,18 +1,18 @@
 import pytest
-from datetime import date
-from maestro.models import Item, Equipamiento, Institucion, Medicamento
+from maestro.models import Institucion, Medicamento
+
 
 # INSTITUCION
 @pytest.mark.django_db
 def test_add_institucion(client):
 
     data = {
-        "nombre":"CLINICA DEL DCC",
-        "tipo":"clinica",
-        "titularidad":"privado",
-        "num_camas_uti":2,
-        "num_camas_uci":3,
-        "factor":1.0,
+        "nombre": "CLINICA DEL DCC",
+        "tipo": "clinica",
+        "titularidad": "privado",
+        "num_camas_uti": 2,
+        "num_camas_uci": 3,
+        "factor": 1.0,
     }
 
     response = client.post(
@@ -28,25 +28,26 @@ def test_add_institucion(client):
     assert response.data["num_camas_uci"] == data["num_camas_uci"]
     assert response.data["factor"] == data["factor"]
 
+
 # MEDICAMENTO
 @pytest.mark.django_db
 def test_add_medicamento(client):
 
     data = {
-        "nombre_comercial" : "Ibupirac test",
-        "nombre_generico" : "Ibuprofeno test",
-        "ingredientes" : "Ibuprofeno test",
-        "concentracion" : "400mg",
-        "forma_presentacion" : "blister",
-        "forma_farmaceutica" : "tabletas",
-        "via_administracion" : "oral",
-        "indicaciones_terapeuticas" : "Alivio temporal de dolores leves a moderados, como dolores de cabeza, dolores musculares, dolor de espalda, dolor de muelas, dolor menstrual y dolor de artritis.",
-        "contraindicaciones" : "No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o hemorragia gastrointestinal, insuficiencia cardíaca grave o enfermedad hepática grave.",
-        "efectos_secundarios" : "Algunos efectos secundarios pueden incluir malestar estomacal, náuseas, vómitos, diarrea, mareos, dolor de cabeza y erupciones en la piel. En casos raros, puede causar reacciones alérgicas graves.",
-        "instrucciones_dosificacion" : "La dosis recomendada para adultos es de 400mg cada 4 a 6 horas, no excediendo los 1,200mg en 24 horas. Consulte a su médico para obtener instrucciones específicas.",
-        "fabricante" : "Laboratorios Chile S.A.",
-        "informacion_almacenamiento" : "Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
-        "interacciones_medicamentosas" : "El ibuprofeno puede interactuar con otros medicamentos, como anticoagulantes, antihipertensivos, aspirina, corticosteroides y diuréticos. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones.",
+        "nombre_comercial": "Ibupirac test",
+        "nombre_generico": "Ibuprofeno test",
+        "ingredientes": "Ibuprofeno test",
+        "concentracion": "400mg",
+        "forma_presentacion": "blister",
+        "forma_farmaceutica": "tabletas",
+        "via_administracion": "oral",
+        "indicaciones_terapeuticas": "Alivio temporal de dolores leves a moderados, como dolores de cabeza, dolores musculares, dolor de espalda, dolor de muelas, dolor menstrual y dolor de artritis.",
+        "contraindicaciones": "No utilizar en caso de alergia al ibuprofeno, úlcera péptica activa o hemorragia gastrointestinal, insuficiencia cardíaca grave o enfermedad hepática grave.",
+        "efectos_secundarios": "Algunos efectos secundarios pueden incluir malestar estomacal, náuseas, vómitos, diarrea, mareos, dolor de cabeza y erupciones en la piel. En casos raros, puede causar reacciones alérgicas graves.",
+        "instrucciones_dosificacion": "La dosis recomendada para adultos es de 400mg cada 4 a 6 horas, no excediendo los 1,200mg en 24 horas. Consulte a su médico para obtener instrucciones específicas.",
+        "fabricante": "Laboratorios Chile S.A.",
+        "informacion_almacenamiento": "Almacenar en un lugar fresco y seco, protegido de la luz y fuera del alcance de los niños.",
+        "interacciones_medicamentosas": "El ibuprofeno puede interactuar con otros medicamentos, como anticoagulantes, antihipertensivos, aspirina, corticosteroides y diuréticos. Consulte a su médico o farmacéutico para obtener información sobre posibles interacciones.",
     }
 
     response = client.post(
@@ -70,14 +71,13 @@ def test_add_medicamento(client):
     assert response.data["interacciones_medicamentosas"] == data["interacciones_medicamentosas"]
 
 
-
 # ITEMS
 @pytest.mark.django_db
 def test_add_item(client):
 
     data = {
-        "nombre":"Respirador mecanico test",
-        "tipo":"soporte_vital",
+        "nombre": "Respirador mecanico test",
+        "tipo": "soporte_vital",
     }
 
     response = client.post(
@@ -97,9 +97,9 @@ def test_add_equipamiento(client):
     item_pk = 3
 
     data = {
-        "marca":"toyota",
-        "modelo":"soporte_vital",
-        "item":item_pk,
+        "marca": "toyota",
+        "modelo": "soporte_vital",
+        "item": item_pk,
     }
 
     response = client.post(
@@ -119,11 +119,11 @@ def test_add_equipamiento(client):
 def test_add_quiebre(client):
 
     data = {
-        "nombre":"CLINICA DEL DCC 2",
-        "tipo":"clinica",
-        "titularidad":"privado",
-        "num_camas_uti":2,
-        "num_camas_uci":3,
+        "nombre": "CLINICA DEL DCC 2",
+        "tipo": "clinica",
+        "titularidad": "privado",
+        "num_camas_uti": 2,
+        "num_camas_uci": 3,
         "factor": 1.0,
     }
 
@@ -131,9 +131,9 @@ def test_add_quiebre(client):
     medicamento = Medicamento.objects.filter(pk=1).first()
 
     data = {
-        "institucion":institucion.id,
-        "medicamento":medicamento.id,
-        "cantidad":1000,
+        "institucion": institucion.id,
+        "medicamento": medicamento.id,
+        "cantidad": 1000,
     }
 
     response = client.post(
